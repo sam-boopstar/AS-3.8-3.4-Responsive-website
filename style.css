@@ -1,0 +1,54 @@
+
+/* for all */
+
+h1{
+    font-family: "Elms Sans", sans-serif;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sections{
+    background-color: #ffffff;
+}
+
+
+/* For laptop */
+
+nav{
+    margin: 30px;
+    background-color:#002C5F;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin: 30px;
+    flex: 1;
+}
+
+.links a{
+    margin: 30px;
+    color:#88CC00;
+    text-decoration: none;
+    flex: 2;
+}
+
+
+/* For tablet */
+@media (max-width:768px){
+    nav{
+    margin: 30px;
+    background-color: lightskyblue;
+}
+    
+}
+
+@media (max-width:500px){
+    nav{
+    margin: 30px;
+    background-color: red;
+}
+
+}

@@ -16,6 +16,17 @@ p{
     line-height: 1.5;
 }
 
+nav{
+    margin: auto;
+    margin-top: 1%;
+    /* min-height: 75px;  */ /* is this needed?*/
+    max-height: 100px;
+    background-color:#002C5F;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
 
 /* For laptop */
 .body_wrap{
@@ -25,19 +36,11 @@ p{
 }
 
 /* nav */
-.laptop{
-    margin: auto;
-    margin-top: 1%;
-    min-height: 75px;
-    background-color:#002C5F;
-    display: flex;
-    justify-content: space-between;
-}
 
 .logo{
     display: flex;
-    flex: 2;
-    justify-content: left;
+    flex: 1;
+    width: 50%;
 }
 
 .logo img{
@@ -45,22 +48,23 @@ p{
     display: block;
 }
 
-.links{
+.laptop_links{
     display: flex;
-    flex: 3;
+    flex: 1;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
-.links a{
+.laptop_links a{
     color:#88CC00;
-    flex: 2;
-    font-size: 2.25rem;
+    flex: 30;
+    font-size: 1.5rem;
     text-decoration: underline;
+    align-items: center;
+    justify-content: center;
 }
 
-.tablet{
+.tablet_links{
     display: none;
 }
 
@@ -134,47 +138,41 @@ header img{
 /* For tablet */
 @media (max-width:768px){
     /* nav */
-    .tablet{
-        display:block;
-        justify-content: center;
-        background-color:#002C5F;
-    }
-
-    .logo{
-        display: flex;
-        flex: 2;
-        justify-content: left;
-    }
-
-    .logo img{
-        width: 50%;
+    .tablet_links{
         display: block;
+        background-color:#002C5F;
+        position: relative;
+        flex:1;
     }
 
     .menu{
-        padding: 20px;
+        align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
     .links{
+        display: none;
         flex: 1;
         flex-direction: column;
-        display: inline-block;
-        flex: 3;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        margin: auto;
+        margin: 1% 2%;
     }
 
     .links a{
         color:#88CC00;
-        display: block;
+        display: inline-block;
         font-size: 1.5rem;
+        line-height: 2;
         text-decoration: underline;
         width: 100%;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
-    .laptop{
+    .laptop_links{
         display: none;
     }
     

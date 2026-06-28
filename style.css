@@ -141,36 +141,41 @@ header img{
     .tablet_links{
         display: block;
         background-color:#002C5F;
-        position: relative;
         flex:1;
+        justify-content: center;
+        position: relative; 
     }
 
     .menu{
-        align-items: center;
+        padding: 20px;
         justify-content: center;
-        text-align: center;
+        z-index: 2;
+        float: right;
+        margin-right: 20px;
     }
 
     .links{
-        display: none;
-        flex: 1;
+        display: block;
         flex-direction: column;
-        margin: auto;
-        margin: 1% 2%;
+        position: absolute;
+        top: 100%; 
+        right: 20px; 
+        width: 50%;
+        background-color:#002C5F;
     }
 
     .links a{
+        display: block;
         color:#88CC00;
-        display: inline-block;
+        flex: 1;
+        width: 100%;
         font-size: 1.5rem;
         line-height: 2;
         text-decoration: underline;
-        width: 100%;
-        flex: 1;
-        align-items: center;
-        justify-content: center;
         text-align: center;
     }
+
+    
 
     .laptop_links{
         display: none;

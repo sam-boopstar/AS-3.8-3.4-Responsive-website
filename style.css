@@ -21,9 +21,9 @@ html{
 /* nav and header*/
 nav{
     margin: auto;
-    margin-top: 1%;
-    /* min-height: 75px;  */ /* is this needed?*/
+    margin-top: 1%; 
     max-height: 100px;
+    min-height: 80px;
     background-color:#002C5F;
     display: flex;
     justify-content: space-evenly;
@@ -49,9 +49,7 @@ nav{
 }
 
 .laptop_links a{
-    color:#88CC00;
     flex: 3;
-    font-size: 1.5rem;
     align-items: center;
     justify-content: center;
 }
@@ -92,6 +90,10 @@ header img{
     float: right;
 }
 
+.phone_image_container{
+    display: none;
+}
+
 .text_container{
     flex: 2;
     margin: 10px;
@@ -107,7 +109,6 @@ header img{
 .cards{
     width: 30%;
     display: block;
-    align-items: center;
     margin: 20px;
     justify-content: center;
     align-items: center;
@@ -116,7 +117,6 @@ header img{
 }
 
 .cards a{
-    font-size: 1rem;
     color: black;
 }
 
@@ -128,11 +128,21 @@ header img{
 /* text and links*/
 h1, a{
     font-family: "Elms Sans", sans-serif;
-    font-size: 2rem;
     line-height: 1.5;
 }
 
+h1{
+    font-size: 2rem;
+}
+
+a {
+    font-size: 1.5rem;
+    color:#88CC00;
+
+}
+
 p{
+    font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
 }
@@ -197,10 +207,53 @@ p{
     
 }
 
-@media (max-width:500px){
-    nav{
-    margin: 30px;
-    background-color: #e3a5b8;
-}
+@media (max-width:480px){
+
+    /* sections */
+    .phone_image_container, .section_1, .section_2{
+        display:block;
+    }
+
+    .hide_on_phone, .section_1 .image_container{
+        display: none;
+    }
+
+
+    /* cards */
+    .cards_container{
+        display: block;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .cards{
+        width: 80%;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color:darkturquoise;
+
+    }
+
+    .cards a{
+        font-size: 1rem;
+        color: black;
+    }
+
+    .cards img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* text and links*/
+    h1,a{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 0.95rem;
+    }
 
 }

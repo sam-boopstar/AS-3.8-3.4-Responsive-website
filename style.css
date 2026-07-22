@@ -9,13 +9,14 @@ change the tablet links to somehthing else
 
 /* For laptop */
 html{
-    background-color:#fbc2d8aa;
+    background-color:#bebebe;
 }
 
 .body_wrap{
     max-width: 1024px;
     margin: auto;
-    margin-bottom: 3px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
     background-color:#D9D9D9;
 }
 
@@ -53,6 +54,14 @@ nav{
     flex: 3;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+
+.selected{
+    /* border-style:outset;
+    border-width: 5px;
+    border-color: #88CC00; */
+    border: 4px outset #88CC00;
 }
 
 .tablet_links{
@@ -142,7 +151,8 @@ iframe{
     display: none;
 }
 
-/* text and links*/
+/* text, links and icons*/
+
 h1, a{
     font-family: "Elms Sans", sans-serif;
     line-height: 1.5;
@@ -152,10 +162,9 @@ h1{
     font-size: 2rem;
 }
 
-a {
+a{
     font-size: 1.5rem;
     color:#88CC00;
-
 }
 
 p{
@@ -176,9 +185,11 @@ p{
         position: relative; 
     }
 
-    .menu{
+    /* burgur menu icon*/
+    i{
+        font-size: 3rem;
+        color:#88CC00;
         padding: 20px;
-        justify-content: center;
         z-index: 2;
         float: right;
         margin-right: 20px;
@@ -283,7 +294,7 @@ p{
     display: none;
     }
 
-    
+
     /* text and links*/
     h1{
         font-size: 1.5rem;

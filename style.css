@@ -55,9 +55,15 @@ nav{
     align-items: center;
     justify-content: center;
     text-align: center;
+    border: 3px solid #002C5F;
 }
 
-.selected{
+.laptop_links a:hover, .tablet_links a:hover{
+    border-color:#bebebe;
+    border-style:inset;
+}
+
+.laptop_links .selected, .tablet_links .selected, .phone_links .selected {
     border: 4px outset #88CC00;
 }
 
@@ -121,6 +127,7 @@ header img{
     align-items: center;
     text-align: center;
     background-color: #bebebe;
+    border: 3px solid #bebebe;
 }
 
 .cards a{
@@ -130,6 +137,11 @@ header img{
 .cards img{
     width: 100%;
     height: auto;
+}
+
+.cards:hover{
+    border-color: #002C5F;
+    border-style:groove;
 }
 
 /* map */
@@ -168,15 +180,6 @@ p{
     font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
-}
-
-.laptop_links a:hover{
-    border: 3px solid #ffffff;
-}
-
-
-.cards:hover{
-    border: 3px solid #002C5F;
 }
 
 

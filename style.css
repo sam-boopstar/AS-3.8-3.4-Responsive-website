@@ -55,7 +55,7 @@ nav{
     border-style:inset;
 }
 
-.laptop_links .selected, .tablet_links .selected, .phone_links .selected {
+.laptop_links .selected, .tablet_links .selected, .phone_links .selected{
     border: 4px outset #88CC00;
 }
 
@@ -128,6 +128,10 @@ header img{
 .cards img{
     width: 100%;
     height: auto;
+}
+
+.cards.selected{
+    border: 3px outset #88CC00;
 }
 
 .cards:hover{
@@ -242,6 +246,7 @@ p{
     
 }
 
+/* For phone */
 @media (max-width:480px){
 
     /* sections */
@@ -264,12 +269,9 @@ p{
     
     .cards{
         width: 80%;
-        display: block;
         margin: auto;
         margin-top: 10px;
         margin-bottom: 10px;
-        background-color:darkturquoise;
-
     }
 
     .cards a{

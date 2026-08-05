@@ -22,17 +22,21 @@
 
 <body>
     <div class="body_wrap">
+        <!-- nav bar -->
         <nav>
+            <!-- logo link -->
             <div class="logo">
                 <a href="http://google.com"><img src="images/logo.png" alt="columba college school logo"></a>
             </div>
 
+            <!-- nav links on laptop -->
             <div class="laptop_links">
                     <a href="index.html">Home</a>
                     <a href="lessons.html">Lessons</a>
                     <a href="events.html" class="selected">Events</a>
             </div>
 
+            <!-- burgur menu on tablet and phone -->
             <div class="tablet_links">
                 <i class="fa-solid fa-bars menu"></i>
 
@@ -42,16 +46,20 @@
                     <a href="events.html" class="selected">Events</a>
                 </div>
             </div>
+
+            <!-- javascript for the burgur menu -->
+            <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+            <script src="jquery.js"></script> 
         </nav>
 
-        <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
-        <script src="jquery.js"></script> 
-
+        <!-- heading image -->
         <header>
             <img src="images/heading3.png" alt="">
         </header>
         
+        <!-- more fencing section -->
         <div class="section_1">
+                <!-- images -->
                 <div class="image_container">
                     <div class="image_col1"><img src="images/more_fencing1.png" alt=""></div>
                     
@@ -62,7 +70,8 @@
                     <div class="image_col2 hide_on_tablet"><img src="images/more_fencing4.png" alt=""></div>
 
                 </div>
-
+                
+                <!-- text -->
                 <div class="text_container">
                     <h1>Can I do more fencing?</h1>
                     <p>Yes, the answer is always yes. There are more classes and chances to fence others down at the Claymoreswords club’s room. This is where all other classes are held. The other lessons available are: <br>
@@ -83,6 +92,7 @@
 </p>
                 </div>
 
+                <!-- images on phone -->
                 <div class="phone_image_container">
                     <div class="image_col1"><img src="images/more_fencing1.png" alt=""></div>
                     
@@ -90,12 +100,16 @@
                 </div>
         </div>
 
+        <!-- tournaments section -->
         <div class="section_2">
+                <!-- text -->
                 <div class="text_container">
                     <h1>Tournaments</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus ornare libero id imperdiet. Maecenas mollis nibh sit amet erat varius malesuada. Curabitur tempus convallis dui, sit amet rutrum felis blandit ut. Maecenas feugiat ligula dignissim, pharetra purus id, tincidunt tortor. Integer leo orci, auctor eget tempus at, ultricies eu ex. Nam rhoncus non felis non maximus. Curabitur sit amet mauris interdum, tempor elit facilisis, laoreet mi. Mauris condimentum, ante id mollis ornare, ex leo porttitor nisi, at bibendum felis augue eu purus.<br><br>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus ornare libero id imperdiet. Maecenas mollis nibh sit amet erat varius malesuada. Curabitur tempus convallis dui, sit amet rutrum felis blandit ut. Maecenas feugiat ligula dignissim, pharetra purus id, tincidunt tortor. Integer leo orci, auctor eget tempus at, ultricies eu ex.</p>
                 </div>
+
+                <!-- images -->
                 <div class="image_container">
                     <div class="image_col1"><img src="images/tournaments1.png" alt=""></div>
                     
@@ -108,6 +122,7 @@
                 </div>
         </div>
 
+        <!-- map -->
         <div class="map">
             <h1>Club location</h1>
             <!-- phone map -->
@@ -118,6 +133,25 @@
             
             <!-- laptop map-->
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2360.033036558399!2d170.50040682930734!3d-45.88054161984899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa82eac0f864c0b1f%3A0xed014dec23de09e4!2sClaymore%20Dunedin%20fencing%20club!5e0!3m2!1sen!2snz!4v1784511574702!5m2!1sen!2snz" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="laptop_map"></iframe>
+        </div>
+  
+        <!-- links to other pages "cards" -->
+        <div class="cards_container">
+            <div class="cards">
+                <a href="index.html"><img src="images/heading1.png" alt="Link to the home page">
+                <p>Home page</p></a>
+            </div>
+
+            <div class="cards">
+                <a href="lessons.html"><img src="images/fencing_at_columba2.jpg" alt="Link to the lessons page">
+                <p>Lessons</p></a>
+            </div>
+
+            <div class="cards selected">
+                <a href="events.html"><img src="images/heading3.png" alt="Link to the events page">
+                <p>Events</p></a>
+            </div>
+
         </div>
 
         

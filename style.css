@@ -2,6 +2,7 @@
 /* For laptop */
 html{
     background-color:#bebebe;
+    scroll-behavior: smooth;
 }
 
 .body_wrap{
@@ -12,7 +13,7 @@ html{
     background-color:#D9D9D9;
 }
 
-/* nav and header*/
+/* navigation*/
 nav{
     margin: auto;
     margin-top: 1%; 
@@ -24,6 +25,13 @@ nav{
     align-items: center; 
 }
 
+.mini_nav{
+    background-color: #002C5F;
+    display: flex;
+    flex-direction: column;
+}
+
+/* logo */
 .logo{
     display: flex;
     flex: 1;
@@ -35,14 +43,15 @@ nav{
     display: block;
 }
 
-.laptop_links{
+/* links to other pages or sections*/
+.laptop_links, .mini_nav_links{
     display: flex;
     flex: 1;
     justify-content: center;
     align-items: center;
 }
 
-.laptop_links a{
+.laptop_links a, .mini_nav_links a{
     flex: 3;
     align-items: center;
     justify-content: center;
@@ -50,7 +59,7 @@ nav{
     border: 3px solid #002C5F;
 }
 
-.laptop_links a:hover, .tablet_links a:hover{
+.laptop_links a:hover, .tablet_links a:hover, .mini_nav_links a:hover{
     border-color:#bebebe;
     border-style:inset;
 }
@@ -63,6 +72,14 @@ nav{
     display: none;
 }
 
+.mini_nav h1{
+    color: #88CC00;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/* header */
 header img{
     width: 100%;
 }

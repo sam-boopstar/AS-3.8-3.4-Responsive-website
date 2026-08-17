@@ -13,6 +13,10 @@ html{
     background-color:#D9D9D9;
 }
 
+[id] {
+  scroll-margin-top: 80px; 
+}
+
 /* navigation*/
 nav{
     margin: auto;
@@ -29,6 +33,10 @@ nav{
     background-color: #002C5F;
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 5px;
+    max-width: 1024px;
+    width:100%;
 }
 
 /* logo */
@@ -56,7 +64,7 @@ nav{
     align-items: center;
     justify-content: center;
     text-align: center;
-    border: 3px solid #002C5F;
+    border: 3px solid transparent;
 }
 
 .laptop_links a:hover, .tablet_links a:hover, .mini_nav_links a:hover{
@@ -70,12 +78,6 @@ nav{
 
 .tablet_links{
     display: none;
-}
-
-.mini_nav h1{
-    color: #88CC00;
-    font-size: 1.5rem;
-    text-align: center;
 }
 
 
@@ -121,6 +123,7 @@ header img{
 }
 
 /* cards */
+
 .cards_container{
     display: flex;
     margin: 20px;
@@ -194,6 +197,27 @@ p{
     line-height: 1.5;
 }
 
+/* mini nav when the burgur menu is open for tablet and phone */
+.mini_nav h1{
+    color: #88CC00;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* mini nav when menu is opened */
+.mini_nav.inactive{
+    background-color: #639700;
+}
+
+.mini_nav.inactive h1,
+.mini_nav.inactive .mini_nav_links a{
+    color: #002C5F;
+}
+
+.mini_nav.inactive .mini_nav_links a{
+    border: 3px solid transparent;
+}
+
 
 /* For tablet */
 @media (max-width:768px){
@@ -215,6 +239,11 @@ p{
         margin-right: 20px;
     }
 
+    /* mini nav */
+    .mini_nav{
+        font-size: 1rem;
+    }
+
     .links{
         display: none;
         flex-direction: column;
@@ -223,6 +252,7 @@ p{
         right: 20px; 
         width: 50%;
         background-color:#002C5F;
+        z-index: 100;
     }
 
     .links a{
@@ -265,6 +295,12 @@ p{
 
 /* For phone */
 @media (max-width:480px){
+
+    /* mini nav */
+    .mini_nav{
+        font-size: 0.5rem;
+    }
+
 
     /* sections */
     .phone_image_container, .section_1, .section_2{

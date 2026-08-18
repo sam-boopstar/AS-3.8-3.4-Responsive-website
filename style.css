@@ -67,9 +67,12 @@ nav{
     border: 3px solid transparent;
 }
 
-.laptop_links a:hover, .tablet_links a:hover, .mini_nav_links a:hover{
-    border-color:#bebebe;
-    border-style:inset;
+/* hover for laptop, not on smaller devices */
+@media (hover: hover) {
+    .laptop_links a:hover, .tablet_links a:hover, .mini_nav_links a:hover, .links a:hover {
+        border-color: #bebebe;
+        border-style: inset;
+    }
 }
 
 .laptop_links .selected, .tablet_links .selected, .phone_links .selected{
@@ -207,10 +210,10 @@ p{
 /* mini nav when menu is opened */
 .mini_nav.inactive{
     background-color: #639700;
+    transition: background-color 0.2s ease;
 }
 
-.mini_nav.inactive h1,
-.mini_nav.inactive .mini_nav_links a{
+.mini_nav.inactive h1,.mini_nav.inactive .mini_nav_links a{
     color: #002C5F;
 }
 

@@ -299,9 +299,19 @@ p{
 /* For phone */
 @media (max-width:480px){
 
-    /* mini nav */
-    .mini_nav a, mini_nav h1{
-        font-size: 0.9rem;
+    /* burgur menu icon*/
+    i{
+        float: right;
+        margin-right: 10px;
+    }
+
+
+    /* nav and mini nav adjustments*/
+    nav a{
+        font-size: 1.3rem;
+    }
+    .mini_nav a, .mini_nav h1{
+        font-size: 0.95rem;
     }
 
 

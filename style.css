@@ -300,8 +300,8 @@ p{
 @media (max-width:480px){
 
     /* mini nav */
-    .mini_nav{
-        font-size: 0.5rem;
+    .mini_nav a, mini_nav h1{
+        font-size: 0.9rem;
     }
 
 

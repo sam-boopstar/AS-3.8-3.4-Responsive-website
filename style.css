@@ -310,8 +310,9 @@ p{
     nav a{
         font-size: 1.3rem;
     }
+
     .mini_nav a, .mini_nav h1{
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
 
@@ -364,7 +365,7 @@ p{
     /* text and links*/
     h1{
         font-size: 1.5rem;
-        line-height: 1;
+        line-height: 1.25;
     }
 
     p{

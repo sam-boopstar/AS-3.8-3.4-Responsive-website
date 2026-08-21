@@ -218,7 +218,7 @@ p{
 }
 
 .mini_nav.inactive .mini_nav_links a{
-    border: 3px solid transparent;
+    border: none;
 }
 
 
@@ -315,7 +315,6 @@ p{
         font-size: 1rem;
     }
 
-
     /* sections */
     .phone_image_container, .section_1, .section_2{
         display:block;
@@ -324,7 +323,6 @@ p{
     .hide_on_phone, .section_1 .image_container{
         display: none;
     }
-
 
     /* cards */
     .cards_container{
@@ -351,7 +349,6 @@ p{
         height: auto;
     }
 
-
     /* map */
     .phone_map{
         display: block;
@@ -360,7 +357,6 @@ p{
     .laptop_map, .tablet_map{
         display: none;
     }
-
 
     /* text and links*/
     h1{

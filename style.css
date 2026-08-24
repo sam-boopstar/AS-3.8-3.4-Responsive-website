@@ -71,7 +71,7 @@ nav{
     border: 3px solid #002C5F;
     box-sizing:border-box;
     display: flex;
-    text-decoration: none; /*but this is on the style sheet is it not?*/
+    text-decoration: none; 
 }
 
 /* hover for laptop, not for other smaller devices */
@@ -90,7 +90,6 @@ nav{
     display: none;
 }
 
-/* mini nav rules */
 
 /* mini nav text */
 .mini_nav h1{
@@ -113,21 +112,7 @@ nav{
     border-color: #639700;
 }
 
-/* mobile highlight rings and tapping borders */
-a, 
-.mini_nav_links a, 
-.laptop_links a, 
-.tablet_links a {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    outline: none;
-}
 
-a:focus, 
-a:active {
-    outline: none;
-    box-shadow: none;
-}
 
 
 
@@ -405,23 +390,4 @@ p{
     p{
         font-size: 0.95rem;
     }
-
-
-        /* over riding phone stuff */
-    /* Fix mobile text colours and kill the laptop border */
-.mini_nav.inactive h1,
-.mini_nav.inactive a,
-.mini_nav.inactive .mini_nav_links a {
-    color: #002C5F !important; /* Forces the dark blue text */
-    border: none !important;    /* Completely removes the lighter border ghosting */
-    background: transparent;
-}
-
-/* Strip native mobile webkit styling */
-.mini_nav a, 
-.mini_nav_links a {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
 }

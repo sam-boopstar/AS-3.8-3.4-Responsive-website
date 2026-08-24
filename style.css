@@ -218,7 +218,16 @@ p{
 }
 
 .mini_nav.inactive .mini_nav_links a{
-    border: 3px solid #639700;
+    border: 3px solid transparent;
+}
+
+.mini_nav_links a:focus,
+.mini_nav_links a:active,
+.mini_nav_links a:focus-visible{
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 

@@ -30,7 +30,7 @@ nav{
 }
 
 .mini_nav{
-    background-color: #002C5F;
+    background-color:#002C5F;
     display: flex;
     flex-direction: column;
     position: sticky;
@@ -67,7 +67,7 @@ nav{
     border: 3px solid transparent;
 }
 
-/* hover for laptop, not on smaller devices */
+/* hover for laptop, not for other smaller devices */
 @media (hover: hover) {
     .laptop_links a:hover, .tablet_links a:hover, .mini_nav_links a:hover, .links a:hover {
         border-color: #bebebe;
@@ -165,7 +165,7 @@ header img{
 /* map */
 .map{
     margin-bottom: 50px;
-    display: flex;
+    display:flex;
     flex-direction: column;
 }
 
@@ -210,15 +210,15 @@ p{
 /* mini nav when menu is opened */
 .mini_nav.inactive{
     background-color: #639700;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.1s ease;
 }
 
-.mini_nav.inactive h1,.mini_nav.inactive .mini_nav_links a{
+.mini_nav.inactive h1, .mini_nav.inactive .mini_nav_links a{
     color: #002C5F;
 }
 
 .mini_nav.inactive .mini_nav_links a{
-    border: 3px solid #002C5F;
+    border: 3px solid #639700;
 }
 
 
@@ -310,10 +310,10 @@ p{
     nav a{
         font-size: 1.3rem;
     }
-    .mini_nav a, .mini_nav h1{
+    
+    .mini_nav .mini_nav_links a, .mini_nav h1{
         font-size: 1.25rem;
     }
-
 
     /* sections */
     .phone_image_container, .section_1, .section_2{

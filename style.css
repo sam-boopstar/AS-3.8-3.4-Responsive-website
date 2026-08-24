@@ -59,7 +59,7 @@ nav{
     align-items: center;
 }
 
-.laptop_links a, .mini_nav_links a, .mini_nav_box{
+.laptop_links a, .mini_nav_box{
     flex: 3;
     align-items: center;
     justify-content: center;
@@ -149,6 +149,7 @@ header img{
     color: black;
 }
 
+
 .cards img{
     width: 100%;
     height: auto;
@@ -201,14 +202,14 @@ p{
     line-height: 1.5;
 }
 
-/* mini nav when the burgur menu is open for tablet and phone */
+/* mini nav text */
 .mini_nav h1{
     color: #88CC00;
     font-size: 1.5rem;
     text-align: center;
 }
 
-/* mini nav when menu is opened */
+/* mini nav when burger menu is opened */
 .mini_nav.inactive{
     background-color: #639700;
     transition: background-color 0.1s ease;
@@ -218,8 +219,17 @@ p{
     color: #002C5F;
 }
 
-.mini_nav.inactive .mini_nav_links a{
+.mini_nav.inactive .mini_nav_box{
     border: 3px solid #639700;
+}
+
+.mini_nav_links a:focus,
+.mini_nav_links a:active,
+.mini_nav_links a:focus-visible{
+    outline: none;
+    border: 0;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 

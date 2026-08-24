@@ -1,4 +1,8 @@
 
+:root {
+  color-scheme: light;
+}
+
 /* For laptop */
 html{
     background-color:#bebebe;
@@ -402,4 +406,22 @@ p{
         font-size: 0.95rem;
     }
 
+
+        /* over riding phone stuff */
+    /* Fix mobile text colours and kill the laptop border */
+.mini_nav.inactive h1,
+.mini_nav.inactive a,
+.mini_nav.inactive .mini_nav_links a {
+    color: #002C5F !important; /* Forces the dark blue text */
+    border: none !important;    /* Completely removes the lighter border ghosting */
+    background: transparent;
+}
+
+/* Strip native mobile webkit styling */
+.mini_nav a, 
+.mini_nav_links a {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 }

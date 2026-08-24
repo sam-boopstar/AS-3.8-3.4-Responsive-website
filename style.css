@@ -59,8 +59,8 @@ nav{
     align-items: center;
 }
 
-.laptop_links a, .mini_nav_box{
-    flex: 3;
+.laptop_links a, .mini_nav_links a, .mini_nav_box{
+    flex: 1;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -149,7 +149,6 @@ header img{
     color: black;
 }
 
-
 .cards img{
     width: 100%;
     height: auto;
@@ -209,10 +208,10 @@ p{
     text-align: center;
 }
 
+
 /* mini nav when burger menu is opened */
 .mini_nav.inactive{
     background-color: #639700;
-    transition: background-color 0.1s ease;
 }
 
 .mini_nav.inactive h1, .mini_nav.inactive .mini_nav_links a{
@@ -223,15 +222,26 @@ p{
     border: 3px solid #639700;
 }
 
-.mini_nav_links a:focus,
-.mini_nav_links a:active,
-.mini_nav_links a:focus-visible{
-    outline: none;
-    border: 0;
-    box-shadow: none;
-    -webkit-tap-highlight-color: transparent;
+.mini_nav.inactive, .mini_nav_links a{
+    border:3px solid #639700;
 }
-
+/* should fix the mini nav i think */
+.mini_nav.inactive, .mini_nav_links a {
+    display: flex;             /* Forces the link to behave like a box container */
+    align-items: center;       /* Centers text vertically inside the box */
+    justify-content: center;   /* Centers text horizontally inside the box */
+    border: 3px solid #639700;
+}
+/* should get rid of the border after clicked*/
+a, 
+.mini_nav_links a, 
+.mini_nav_box, 
+.laptop_links a, 
+.tablet_links a {
+    -webkit-tap-highlight-color: transparent; /* Disables the native mobile tap highlight box */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    outline: none;                            /* Disables the keyboard/focus highlight ring */
+}
 
 /* For tablet */
 @media (max-width:768px){

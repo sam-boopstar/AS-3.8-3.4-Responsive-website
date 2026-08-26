@@ -43,6 +43,27 @@ nav{
     width:100%;
 }
 
+.mini_nav h1{
+    color: #88CC00;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* mini nav when burger menu on tablet and phone is opened*/
+.mini_nav.inactive {
+    background-color: #639700;
+}
+
+.mini_nav.inactive h1{
+    color: #002C5F; 
+}
+
+.mini_nav.inactive a{
+    color: #002C5F; 
+    border-color: #639700;
+    pointer-events: none
+}
+
 /* logo */
 .logo{
     display: flex;
@@ -76,51 +97,18 @@ nav{
 
 /* hover for laptop, not for other smaller devices */
 @media (hover: hover) {
-    .laptop_links a:hover, .tablet_links a:hover, .mini_nav_box:hover{
-        border-color: #bebebe;
-        border-style: inset;
+    .laptop_links a:hover, .tablet_links a:hover, .mini_nav_links a:hover{
+        background-color: #004B6B; 
     }
 }
 
 .laptop_links .selected, .tablet_links .selected, .phone_links .selected{
-    border: 4px outset #88CC00;
+    background-color:#000599;
 }
 
 .tablet_links{
     display: none;
 }
-
-
-/* mini nav text */
-.mini_nav h1{
-    color: #88CC00;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-/* mini nav when burger menu is opened*/
-.mini_nav.inactive {
-    background-color: #639700;
-}
-
-.mini_nav.inactive h1{
-    color: #002C5F; 
-}
-
-.mini_nav.inactive a{
-    color: #002C5F; 
-    border-color: #639700;
-}
-
-
-
-
-
-
-
-
-
-
 
 /* header */
 header img{

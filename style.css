@@ -1,5 +1,6 @@
 
-:root {
+/* overriding the dark mode settings */
+:root[data-theme="light"] {
   color-scheme: light;
 }
 
@@ -95,13 +96,6 @@ nav{
     text-decoration: none; 
 }
 
-/* hover for laptop, not for other smaller devices */
-@media (hover: hover) {
-    .laptop_links a:hover, .tablet_links a:hover, .mini_nav_links a:hover{
-        background-color: #004B6B; 
-    }
-}
-
 .laptop_links .selected, .tablet_links .selected, .phone_links .selected{
     background-color:#000599;
 }
@@ -116,7 +110,6 @@ header img{
 }
 
 /* sections */
-
 .section_1, .section_2, .map{
     background-color: #88CC00;
     display: flex;
@@ -181,12 +174,9 @@ header img{
 }
 
 .cards.selected{
-    border: 3px outset #88CC00;
-}
+    border-color: #88CC00;
+    background-color: #88CC00;
 
-.cards:hover{
-    border-color: #002C5F;
-    border-style:groove;
 }
 
 /* map */
@@ -203,6 +193,18 @@ iframe{
 
 .tablet_map, .phone_map{
     display: none;
+}
+
+/* all hovers for laptop, not for other smaller devices */
+@media (hover: hover) {
+    .laptop_links a:hover, .tablet_links a:hover, .mini_nav_links a:hover{
+        background-color: #004B6B; 
+    }
+    
+    .cards:hover{
+        border-color: #004faa;
+        background-color: #004faa;
+    }
 }
 
 /* text, links and icons*/

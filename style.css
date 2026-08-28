@@ -4,21 +4,6 @@
   color-scheme: light;
 }
 
-
-:root[data-theme="light"] {
-  color-scheme: light;
-  
-  /* Force mobile rendering engines to respect your color palette */
-  background-color: #ffffff;
-  color: #1a1a1a;
-}
-
-/* Ensure the body actually inherits the root change */
-body {
-  background-color: inherit;
-  color: inherit;
-}
-
 /* For laptop */
 html{
     background-color:#bebebe;

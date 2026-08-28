@@ -1,6 +1,6 @@
 
-/* overriding the dark mode settings */
-:root[data-theme="light"] {
+/* overriding dark mode. */
+:root {
   color-scheme: light;
 }
 

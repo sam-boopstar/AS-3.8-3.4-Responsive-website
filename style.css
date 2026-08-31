@@ -73,7 +73,7 @@ nav{
 }
 
 .logo img{
-    width: 50%;
+    max-width: 50%;
     display: block;
 }
 
@@ -106,7 +106,8 @@ nav{
 
 /* header */
 header img{
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 /* sections */
@@ -130,6 +131,8 @@ header img{
 
 .image_col1 img, .image_col2 img {
     width: 50%;
+    min-width: 50%;
+    height: auto;
 }
 
 .image_col2 img{
@@ -285,7 +288,8 @@ p{
     }
 
     .image_col1 img, .image_col2 img {
-        width: 100%;
+        min-width: 100%;
+        height: auto;
         margin: 5px;
         float: none;
     }

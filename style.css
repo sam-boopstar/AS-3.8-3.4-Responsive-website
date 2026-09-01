@@ -1,8 +1,8 @@
 
 /* overriding dark mode. */
-:root {
+/* :root {
   color-scheme: light;
-}
+} */
 
 /* For laptop */
 html{
@@ -108,6 +108,7 @@ nav{
 header img{
     max-width: 100%;
     height: auto;
+    aspect-ratio: 1954/1183;
 }
 
 /* sections */
@@ -133,6 +134,7 @@ header img{
     width: 50%;
     min-width: 50%;
     height: auto;
+    aspect-ratio: 4/3;
 }
 
 .image_col2 img{
@@ -174,6 +176,7 @@ header img{
 .cards img{
     width: 100%;
     height: auto;
+    aspect-ratio: 4/3;
 }
 
 .cards.selected{
@@ -210,7 +213,7 @@ iframe{
     }
 }
 
-/* text, links and icons*/
+/* text and links*/
 
 h1, a{
     font-family: "Elms Sans", sans-serif;
@@ -231,6 +234,7 @@ p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
 }
+
 
 
 /* For tablet */

@@ -15,9 +15,13 @@
     <!-- imported fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap">
 
-    <script src="https://kit.fontawesome.com/f706a54f71.js" crossorigin="anonymous"></script>
+    <!-- preloading the header image -->
+    <link rel="preload" href="images/lessons_heading.webp" as="image">
+
+    <!-- deferred links to prevent render blocking -->
+    <script src="https://kit.fontawesome.com/f706a54f71.js" crossorigin="anonymous" defer></script>
 
 </head>
 
@@ -48,9 +52,6 @@
                 </div>
             </div>
 
-            <!-- javascript for the burgur menu -->
-            <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
-            <script src="jquery.js"></script> 
         </nav>
 
         <!-- mini nav -->
@@ -193,5 +194,8 @@
             </div>
         </main>   
     </div>
+    <!-- javascript for the burgur menu -->
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script src="jquery.js" defer></script> 
 </body>
 </html>

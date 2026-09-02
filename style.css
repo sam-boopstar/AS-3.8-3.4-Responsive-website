@@ -103,7 +103,7 @@ nav{
 header img{
     max-width: 100%;
     height: auto;
-    aspect-ratio: 1954/1183;
+    /* aspect-ratio: 1954/1183; */
 }
 
 /* sections */
@@ -129,7 +129,7 @@ header img{
 .image_col1 img, .image_col2 img {
     width: 50%;
     height: auto;
-    aspect-ratio: 4/3;
+    /* aspect-ratio: 4/3; */
 }
 
 .image_col2 img{
@@ -171,7 +171,7 @@ header img{
 .cards img{
     width: 100%;
     height: auto;
-    aspect-ratio: 4/3;
+    /* aspect-ratio: 4/3; */
 }
 
 .cards.selected{

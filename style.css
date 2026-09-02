@@ -110,6 +110,7 @@ header img{
 .section_1, .section_2, .map{
     background-color: #88CC00;
     display: flex;
+    flex-direction: row;
     padding: 20px;
     margin: 20px;
 }
@@ -127,7 +128,6 @@ header img{
 
 .image_col1 img, .image_col2 img {
     width: 50%;
-    min-width: 50%;
     height: auto;
     aspect-ratio: 4/3;
 }
@@ -329,11 +329,17 @@ p{
     }
 
     /* sections */
-    .phone_image_container, .section_1, .section_2{
+    .section_2{
         display:block;
     }
 
-    .hide_on_phone, .section_1 .image_container{
+    /* sections */
+    .section_1{
+        flex-direction: column-reverse;
+        
+}
+
+    .hide_on_phone{
         display: none;
     }
 
@@ -383,4 +389,7 @@ p{
     p{
         font-size: 0.95rem;
     }
+
+
+
 }

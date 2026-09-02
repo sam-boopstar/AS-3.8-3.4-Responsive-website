@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- imported fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
     <!-- preloading the header image -->
     <link rel="preload" href="images/events_heading.webp" as="image">
@@ -130,14 +130,20 @@
             <!-- map -->
             <div class="map" id="map">
                 <h1>Club location<br></h1>
+                <div class="map_container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2360.033036558399!2d170.50040682930734!3d-45.88054161984899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa82eac0f864c0b1f%3A0xed014dec23de09e4!2sClaymore%20Dunedin%20fencing%20club!5e0!3m2!1sen!2snz!4v1784511574702!5m2!1sen!2snz" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Map showing Claymoreswords Club">
+        </iframe>
+    </div>
                 <!-- phone map -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2360.033036558399!2d170.50040682930734!3d-45.88054161984899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa82eac0f864c0b1f%3A0xed014dec23de09e4!2sClaymore%20Dunedin%20fencing%20club!5e0!3m2!1sen!2snz!4v1784511574702!5m2!1sen!2snz" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="phone_map" title="Map showing Claymoreswords Club - laptop view"></iframe>
-                
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2360.033036558399!2d170.50040682930734!3d-45.88054161984899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa82eac0f864c0b1f%3A0xed014dec23de09e4!2sClaymore%20Dunedin%20fencing%20club!5e0!3m2!1sen!2snz!4v1784511574702!5m2!1sen!2snz" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="phone_map" title="Map showing Claymoreswords Club - laptop view"></iframe>
+                 -->
                 <!-- tablet map-->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2360.033036558399!2d170.50040682930734!3d-45.88054161984899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa82eac0f864c0b1f%3A0xed014dec23de09e4!2sClaymore%20Dunedin%20fencing%20club!5e0!3m2!1sen!2snz!4v1784511574702!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="tablet_map" title="Map showing Claymoreswords Club - tablet view"></iframe>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2360.033036558399!2d170.50040682930734!3d-45.88054161984899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa82eac0f864c0b1f%3A0xed014dec23de09e4!2sClaymore%20Dunedin%20fencing%20club!5e0!3m2!1sen!2snz!4v1784511574702!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="tablet_map" title="Map showing Claymoreswords Club - tablet view"></iframe> -->
                 
                 <!-- laptop map-->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2360.033036558399!2d170.50040682930734!3d-45.88054161984899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa82eac0f864c0b1f%3A0xed014dec23de09e4!2sClaymore%20Dunedin%20fencing%20club!5e0!3m2!1sen!2snz!4v1784511574702!5m2!1sen!2snz" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="laptop_map" title="Map showing Claymoreswords Club - phone view"></iframe>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2360.033036558399!2d170.50040682930734!3d-45.88054161984899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa82eac0f864c0b1f%3A0xed014dec23de09e4!2sClaymore%20Dunedin%20fencing%20club!5e0!3m2!1sen!2snz!4v1784511574702!5m2!1sen!2snz" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="laptop_map" title="Map showing Claymoreswords Club - phone view"></iframe> -->
+
+
             </div>
     
             <!-- links to other pages "cards" -->

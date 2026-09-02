@@ -393,3 +393,30 @@ p{
 
 
 }
+
+
+
+
+/* Container holds the correct space for the map before it loads */
+.map_container {
+    width: 100%;
+    max-width: 800px; /* Limits the size on wide laptop views */
+    margin: 0 auto;
+    
+    /* Matches your 800x600 laptop ratio (4:3 aspect ratio) */
+    aspect-ratio: 4 / 3; 
+}
+
+/* Ensures the iframe stretches perfectly inside the reserved boundary box */
+.map_container iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Optional: Make it slightly shorter on mobile screens if it takes up too much height */
+@media (max-width: 600px) {
+    .map_container {
+        aspect-ratio: 16 / 9; /* Sleeker, wider layout box for phones */
+    }
+}

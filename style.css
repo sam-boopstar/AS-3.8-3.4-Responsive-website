@@ -181,20 +181,26 @@ header img{
 }
 
 /* map */
-.map{
+.map_section{
     margin-bottom: 50px;
     display:flex;
     flex-direction: column;
 }
 
-iframe{
-    display: block;
+iframe {
     width: 100%;
+    height: 100%;
+    display: block;
 }
 
-.tablet_map, .phone_map{
-    display: none;
+.map{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    aspect-ratio: 4 / 3; 
 }
+
+
 
 /* all hovers for laptop, not for other smaller devices */
 @media (hover: hover) {
@@ -371,14 +377,9 @@ p{
 
 
     /* map */
-    .phone_map{
-        display: block;
+    .map{
+        aspect-ratio: 16 / 9;
     }
-
-    .laptop_map, .tablet_map{
-        display: none;
-    }
-
 
     /* text and links*/
     h1{
@@ -390,33 +391,4 @@ p{
         font-size: 0.95rem;
     }
 
-
-
-}
-
-
-
-
-/* Container holds the correct space for the map before it loads */
-.map_container {
-    width: 100%;
-    max-width: 800px; /* Limits the size on wide laptop views */
-    margin: 0 auto;
-    
-    /* Matches your 800x600 laptop ratio (4:3 aspect ratio) */
-    aspect-ratio: 4 / 3; 
-}
-
-/* Ensures the iframe stretches perfectly inside the reserved boundary box */
-.map_container iframe {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-/* Optional: Make it slightly shorter on mobile screens if it takes up too much height */
-@media (max-width: 600px) {
-    .map_container {
-        aspect-ratio: 16 / 9; /* Sleeker, wider layout box for phones */
-    }
 }

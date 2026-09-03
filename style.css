@@ -200,7 +200,6 @@ iframe {
 }
 
 
-
 /* all hovers for laptop, not for other smaller devices */
 @media (hover: hover) {
     .laptop_links a:hover, .tablet_links a:hover, .mini_nav_links a:hover{
@@ -233,6 +232,13 @@ p{
     font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
+}
+
+/* icons for display swap */
+@font-face {
+    src:url(https://kit.fontawesome.com/f706a54f71.js);
+    font-family: 'Font Awesome 6 Free';
+    font-display: swap;
 }
 
 

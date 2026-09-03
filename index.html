@@ -7,21 +7,22 @@
     <meta name="description" content="Fencing at Columba College. Learn about the fencing.">
     
     <!-- css reset -->
-    <link rel="stylesheet" href="css_reset.css">
+    <link rel="stylesheet" href="css_reset.css" media="print" onload="this.media='all'">
 
     <!-- css style sheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
 
-    <!-- imported fonts and icons-->
+
+    <!-- imported fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
     <!-- preloading the header image -->
-    <link rel="preload" href="images/homepage_heading.webp" as="image">
+    <link rel="preload" href="images/homepage_heading.webp" as="image" fetchpriority="high">
 
     <!-- deferred links to prevent render blocking -->
-    <script src="https://kit.fontawesome.com/f706a54f71.js" crossorigin="anonymous" defer></script>
+    <script pel="preconnect" src="https://kit.fontawesome.com/f706a54f71.js" crossorigin="anonymous" defer></script>
 </head>
 
 <body>
@@ -63,7 +64,7 @@
 
         <!-- heading image -->
         <header>
-            <img src="images/homepage_heading.webp" alt="Columba College Fencing Squad, 2026" fetchpriority="high">
+            <img src="images/homepage_heading.webp" alt="Columba College Fencing Squad, 2026">
         </header>
         
         <!-- main tag for ARIA and accessibility -->

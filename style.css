@@ -233,6 +233,13 @@ p{
     line-height: 1.5;
 }
 
+strong{
+    font-weight: bold;
+}
+
+em{
+    font-style: italic;
+}
 
 /* For tablet */
 @media (max-width:768px){
